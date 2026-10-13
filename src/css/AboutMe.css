@@ -61,24 +61,151 @@
 }
 .right {
   flex: 1;
-  min-width: 400px;
-  border: 2px solid beige;
+  min-width: min(400px, 100%);
 }
 .left {
   flex: 1;
-  min-width: 400px;
+  min-width: min(400px, 100%);
 }
 
-.section-flex-column {
+/* ---------- Me as a programmer ---------- */
+
+.aboutme-dev {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.aboutme-dev-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}
+
+.aboutme-dev-text p:first-child {
+  font-size: 19px;
+  color: var(--color-text);
+}
+
+.aboutme-dev-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* A small editor window, always dark like the hero. */
+.code-window {
+  background: linear-gradient(160deg, #262f3d 0%, #1b222c 60%, #12171e 100%);
+  border-radius: 14px;
+  box-shadow:
+    0 24px 60px rgba(18, 23, 30, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  overflow: hidden;
+  transform: rotate(1deg);
+  transition: transform 0.3s ease;
+}
+
+.code-window:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+.code-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.code-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.code-dot:first-child {
+  background: #d98a5f;
+}
+
+.code-window-file {
+  margin-left: 10px;
+  font-size: 13px;
+  color: var(--text-light-secondary);
+  font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+}
+
+.code-window-body {
+  padding: 22px 24px 26px;
+  font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--text-light-secondary);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.code-keyword {
+  color: #c792ea;
+}
+
+.code-key {
+  color: var(--text-light);
+}
+
+.code-string {
+  color: #e6a67e;
+}
+
+/* ---------- Beyond the code ---------- */
+
+.aboutme-beyond {
   display: flex;
   align-items: center;
   gap: 3rem;
   flex-wrap: wrap;
+  margin-top: 88px;
+  padding-top: 72px;
+  border-top: 1px solid var(--color-border);
+}
+
+.aboutme-subheading {
+  font-size: clamp(26px, 3.5vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+  margin-bottom: 28px;
+}
+
+:root[data-theme="dark"] .aboutme-subheading {
+  color: var(--color-text);
 }
 
 @media (max-width: 800px) {
   .aboutme-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .aboutme-dev {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .code-window {
+    transform: none;
+  }
+
+  .aboutme-beyond {
+    margin-top: 64px;
+    padding-top: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-window,
+  .code-window:hover {
+    transition: none;
+    transform: none;
   }
 }

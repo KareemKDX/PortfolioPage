@@ -48,11 +48,26 @@ export const aboutMe = {
   ],
 };
 
+export const programmer = {
+  paragraphs: [
+    "I wanted to understand what actually happens under the hood, so I started building it myself.",
+    "Today I work full-stack, with React and TypeScript on the frontend and Node.js, Express and SQL/Postgres on the backend. I've built everything from a music streaming app with JWT login to an e-commerce shop with an admin dashboard, both on my own and in teams using Git and code reviews.",
+    "I like code that is easy to read and easy to change. I start by understanding the problem, build something small that works, and then refine it. I always have the end user in mind: if it's confusing for them to use, it's probably built wrong.",
+  ],
+  snippet: [
+    { key: "role", value: '"Fullstack Developer"' },
+    { key: "stack", list: ["React TS", "Java", "Node.js", "SQL"] },
+    { key: "workflow", value: '"understand → build → refine"' },
+
+    { key: "status", value: '"Open to LIA"' },
+  ],
+};
+
 export const interests = [
   {
     icon: "curious",
     title: "Curious",
-    text: "I like understanding how things work, and I learn best by building and breaking things.",
+    text: "I want to understand. I learn best by experimenting, making mistakes, and refining things until I get them right.",
   },
   {
     icon: "running",
@@ -67,7 +82,7 @@ export const interests = [
   {
     icon: "coffee",
     title: "Coffee",
-    text: "Best ideas and most bugs get fixed with a warm cup of coffee in hand no?",
+    text: "Best ideas and most bugs get fixed with a warm cup of coffee in hand, no?",
   },
 ];
 export const skills = [
