@@ -1,4 +1,5 @@
 import kareemPic from "/images/kareempic.jpg";
+import foodiemap from "/images/foodiemap-img";
 export const navItems = [
   { id: "home", label: "Home" },
   { id: "aboutMe", label: "About" },
@@ -153,7 +154,7 @@ export const projects = [
     description:
       "A responsive restaurant discovery app that helps users find restaurants based on dietary needs. Features include search and filtering, saved favorites, map-based location viewing, and user-submitted restaurant tips.",
     tags: ["React", "Node.js", "Express", "Supabase", "Vercel"],
-    image: "/images/foodiemap-img.png",
+    image: foodiemap,
     link: "https://github.com/shemaakamal00/Foodie-map",
   },
 ];
