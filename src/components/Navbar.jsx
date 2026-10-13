@@ -31,7 +31,7 @@ function Navbar({ activeSection, onNavClick, scrolled }) {
 
         <a
           className="navbar-resume"
-          href="/Kareem-Drammeh-CV-PAGE.pdf"
+          href={import.meta.env.BASE_URL + "Kareem-Drammeh-CV-PAGE.pdf"}
           target="_blank"
           rel="noopener noreferrer"
         >
