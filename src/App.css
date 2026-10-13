@@ -1,0 +1,23 @@
+.page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  /* Push the content below the fixed navbar, and fill the rest of the
+     screen height so the content column knows how tall it's allowed to be. */
+  height: calc(100vh - var(--navbar-height));
+  overflow: hidden;
+
+  /* Keep the two columns from stretching edge-to-edge on wide screens,
+     and center the whole thing horizontally. */
+  max-width: 1600px;
+  margin: var(--navbar-height) auto 0;
+}
+
+/* Below this width the sidebar and content stack on top of each other,
+   so we let the whole page scroll normally instead of just the content box. */
+@media (max-width: 900px) {
+  .page-wrapper {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,115 @@
+.sidebar {
+  /* This column does not scroll — it just sits in place while the
+     content column next to it scrolls independently. */
+  width: 500px;
+  flex-shrink: 0;
+  height: 100%;
+  padding: 28px 20px;
+  display: flex;
+  margin-top: 5px;
+  align-items: center; /* centers the card vertically, top to bottom */
+  justify-content: center; /* centers the card horizontally */
+  background-color: var(--color-navy);
+}
+
+.side-wrapper {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #262f3d 0%, #1b222c 100%);
+  border-radius: var(--radius);
+  padding: 10px;
+  height: 100%;
+  margin: 20px;
+}
+
+.profile-box {
+  width: 100%;
+  background: var(--color-surface);
+  border: 3px solid var(--color-border);
+  border-radius: var(--radius);
+
+  text-align: center;
+}
+
+.profile-avatar {
+  margin: 0 auto 24px;
+
+  background: var(--color-navy);
+  color: var(--color-navy-text);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-name {
+  font-size: 35px;
+  color: var(--color-text);
+}
+
+.profile-title {
+  margin-top: 6px;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-copper);
+}
+
+.profile-tagline {
+  margin-top: 14px;
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.profile-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 24px 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.profile-info a:hover {
+  color: var(--color-copper);
+}
+
+.profile-socials {
+  margin-top: 24px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.profile-social-link {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+
+.profile-social-link:hover {
+  border-color: var(--color-copper);
+  color: var(--color-copper);
+}
+
+/* On small screens the two columns stack, so let the sidebar take full width. */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px 0;
+  }
+}

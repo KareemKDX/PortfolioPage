@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" -L https://dennisthedeveloper.net/ -o /tmp/dennis.html -w \"HTTP %{http_code}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" -L https://copperandblack.com/ -o /tmp/copperblack.html -w \"HTTP %{http_code}\\\\n\")",
+      "Bash(cygpath -w /tmp/copperblack.html)",
+      "Bash(cygpath -w /tmp/dennis.html)",
+      "Bash(curl -s -A \"Mozilla/5.0\" https://dennisthedeveloper.net/assets/index-CWzco8jT.css -o /tmp/dennis.css -w \"HTTP %{http_code}, size: \")",
+      "Bash(curl -s -A \"Mozilla/5.0\" https://copperandblack.com/css/mainC.css -o /tmp/mainC.css -w \"mainC: %{http_code} \")",
+      "Bash(curl -s -A \"Mozilla/5.0\" https://copperandblack.com/css/custom.css -o /tmp/custom.css -w \"custom: %{http_code}\\\\n\")",
+      "Bash(cygpath -w /tmp/mainC.css /tmp/custom.css)",
+      "Bash(powershell -Command \"Get-ChildItem 'D:\\\\CV-KAREEM\\\\CV2026'\")",
+      "Bash(powershell -Command \"Get-ChildItem -Recurse 'D:\\\\CV-KAREEM\\\\CV2026\\\\src', 'D:\\\\CV-KAREEM\\\\CV2026\\\\public' | Select-Object FullName\")"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  background: transparent;
+  color: var(--color-navy-text);
+  z-index: 10;
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.navbar-scrolled {
+  background: color-mix(in srgb, var(--color-navy) 92%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.06),
+    0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-wrapper {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-logo {
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--color-navy-text);
+}
+
+.navbar-logo-dot {
+  color: var(--color-copper);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-link {
+  padding: 8px 14px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-navy-text);
+  opacity: 0.75;
+  border-bottom: 2px solid transparent;
+  transition:
+    opacity 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.navbar-link:hover {
+  opacity: 1;
+}
+
+.navbar-link-active {
+  opacity: 1;
+  color: var(--color-copper-light);
+  border-bottom-color: var(--color-copper);
+}
+
+.theme-toggle {
+  font-size: 20px;
+  line-height: 1;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-resume {
+  margin-left: auto;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-copper-light);
+  border: 2px solid var(--color-copper);
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.navbar-resume:hover {
+  background: var(--color-copper);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* On small screens, hide the text links so the navbar doesn't overflow.
+   (A hamburger menu would be a nice next step, but let's keep it simple.) */
+@media (max-width: 640px) {
+  .navbar-links {
+    display: none;
+  }
+}

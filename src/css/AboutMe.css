@@ -1,0 +1,84 @@
+.aboutme-grid {
+  display: grid;
+
+  gap: 48px;
+  align-items: start;
+}
+
+.aboutme-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}
+
+.aboutme-interests {
+  padding: 28px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.aboutme-interests-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.aboutme-interest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.aboutme-interest {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.aboutme-interest-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  background: color-mix(in srgb, var(--color-copper) 12%, transparent);
+  border-radius: 50%;
+}
+
+.aboutme-interest h4 {
+  margin-bottom: 4px;
+  color: var(--color-text);
+}
+
+.aboutme-interest p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+.right {
+  flex: 1;
+  min-width: 400px;
+  border: 2px solid beige;
+}
+.left {
+  flex: 1;
+  min-width: 400px;
+}
+
+.section-flex-column {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .aboutme-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
