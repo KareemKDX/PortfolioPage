@@ -123,8 +123,9 @@ export const projects = [
       "A full-stack e-commerce web application. Allows customers to browse products, manage their shopping cart and place orders, while administrators can manage products and orders through an admin dashboard. 3rd party integrations: Frankfurter, Stripe, PostNord Delivery.",
 
     image: import.meta.env.BASE_URL + "/images/spexah3.png",
-    tags: ["React TS", "JavaScript", "React", "Vercel"],
-    link: "https://music-ecommerce-frontend.vercel.app/",
+    tags: ["React", "Typescript", "Express", "Vercel", "Supabase"],
+    visit: "https://music-ecommerce-frontend.vercel.app/",
+    github: "https://github.com/KareemKDX/Music-Ecommerce",
   },
   {
     title: "MusicPlate",
@@ -132,7 +133,8 @@ export const projects = [
       "A simplified Spotify-inspired music streaming app built with React, TypeScript, Express and PostgreSQL. Browse songs, log in with JWT, manage playlists and switch subscription plans.",
     image: import.meta.env.BASE_URL + "/images/musicplateimg2.png",
     tags: ["React TS", "Node.js", "Express", "Render"],
-    link: "https://musicplate-frontend.onrender.com/",
+    visit: "https://musicplate-frontend.onrender.com/",
+    github: "https://github.com/KareemKDX/MusicPlate",
   },
 
   {
@@ -141,7 +143,8 @@ export const projects = [
       "An interactive learning application designed for children to help them practice and master their schoolwork. The app allows children to input their own assignments.",
     tags: ["React", "Node.js", "Express", "Supabase"],
     image: import.meta.env.BASE_URL + "/images/lexlaxbild.png",
-    link: "https://github.com/Augustlyden/Lex-Lax",
+    visit: "",
+    github: "https://github.com/Augustlyden/Lex-Lax",
   },
   {
     title: "Community-forum",
@@ -149,7 +152,8 @@ export const projects = [
       "A community forum built in PHP and MariaDB where users create groups, start discussions and manage members through roles and invite links.",
     tags: ["PHP", "JavaScript", "MariaDB"],
     image: import.meta.env.BASE_URL + "/images/commuty-forum-img.png",
-    link: "https://github.com/KareemKDX/Community-Forum",
+    visit: "",
+    github: "https://github.com/KareemKDX/Community-Forum",
   },
   {
     title: "Foodie-Map",
@@ -157,6 +161,7 @@ export const projects = [
       "A responsive restaurant discovery app that helps users find restaurants based on dietary needs. Features include search and filtering, saved favorites, map-based location viewing, and user-submitted restaurant tips.",
     tags: ["React", "Node.js", "Express", "Supabase", "Vercel"],
     image: import.meta.env.BASE_URL + "/images/foodiemap-img.png",
-    link: "https://github.com/shemaakamal00/Foodie-map",
+    visit: "",
+    github: "https://github.com/shemaakamal00/Foodie-map",
   },
 ];
