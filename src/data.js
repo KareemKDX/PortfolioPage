@@ -57,7 +57,7 @@ export const programmer = {
   ],
   snippet: [
     { key: "role", value: '"Fullstack Developer"' },
-    { key: "stack", list: ["React TS", "Java", "Node.js", "SQL"] },
+    { key: "stack", list: ["React TS", "Java", "Express", "MySQL"] },
     { key: "workflow", value: '"understand → build → refine"' },
 
     { key: "status", value: '"Open to LIA"' },
@@ -118,6 +118,15 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Spexah Instruments",
+    description:
+      "A full-stack e-commerce web application. Allows customers to browse products, manage their shopping cart and place orders, while administrators can manage products and orders through an admin dashboard. 3rd party integrations: Frankfurter, Stripe, PostNord Delivery.",
+
+    image: import.meta.env.BASE_URL + "/images/spexah3.png",
+    tags: ["React TS", "JavaScript", "React", "Vercel"],
+    link: "https://music-ecommerce-frontend.vercel.app/",
+  },
+  {
     title: "MusicPlate",
     description:
       "A simplified Spotify-inspired music streaming app built with React, TypeScript, Express and PostgreSQL. Browse songs, log in with JWT, manage playlists and switch subscription plans.",
@@ -125,14 +134,7 @@ export const projects = [
     tags: ["React TS", "Node.js", "Express", "Render"],
     link: "https://musicplate-frontend.onrender.com/",
   },
-  {
-    title: "Spexah Instruments",
-    description:
-      "A full-stack e-commerce web application. Allows customers to browse products, manage their shopping cart and place orders, while administrators can manage products and orders through an admin dashboard.",
-    image: import.meta.env.BASE_URL + "/images/spexahinstruments.png",
-    tags: ["React TS", "JavaScript", "React", "Vercel"],
-    link: "https://eshop-frontend-mauve.vercel.app/",
-  },
+
   {
     title: "Lex Läx",
     description:
